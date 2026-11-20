@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6f5948">
+  <title>Istanbul | Trip Planner</title>
+  <style>
+*{box-sizing:border-box} :root{--ink:#30271f;--muted:#8b8177;--brown:#765c48;--brown-dark:#594434;--cream:#f7f3ed;--line:#e9e1d7;--white:#fff;--sage:#e8ede5}body{margin:0;background:#fbf9f6;color:var(--ink);font-family:"DM Sans",sans-serif}.topbar{height:76px;padding:0 max(5vw,24px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#fff}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--brown-dark);font-size:14px;font-weight:700;letter-spacing:2px}.brand small{display:block;font-size:9px;letter-spacing:3px;color:#a99b8c;margin-top:3px}.brand-mark{font-size:25px}.lang-btn{border:1px solid var(--line);background:#fff;border-radius:30px;padding:9px 17px;color:var(--brown);font-weight:700;cursor:pointer}.page{max-width:1120px;margin:auto;padding:38px 28px 24px}.hero{display:grid;grid-template-columns:1fr 1fr;min-height:330px;background:var(--cream);border-radius:22px;overflow:hidden}.hero-copy{padding:48px 52px}.eyebrow{font-size:10px;letter-spacing:2.2px;font-weight:700;color:#a18b76;margin:0 0 12px}.hero h1{font:700 clamp(42px,5vw,66px)/1.02 "Playfair Display",serif;margin:0;color:var(--brown-dark)}.hero-sub{color:#84796e;line-height:1.7;max-width:330px;margin:20px 0}.date-pill{display:inline-flex;align-items:center;gap:12px;border:1px solid #dfd4c7;border-radius:30px;padding:10px 15px;font-size:10px;letter-spacing:1.3px;font-weight:700;color:var(--brown)}.dot{width:4px;height:4px;background:#b49b80;border-radius:50%}.hero-art{position:relative;overflow:hidden;background:linear-gradient(155deg,#d8d5c9,#b5c1bd 55%,#8ca5a5);display:flex;align-items:center;justify-content:center}.sun{position:absolute;width:115px;height:115px;border-radius:50%;background:#f2dfbc;top:40px;right:70px;opacity:.9}.skyline{position:absolute;top:30px;left:40px;color:#fff;font-size:55px;opacity:.8}.mosque{font-size:115px;z-index:2;filter:grayscale(1);opacity:.8;margin-top:15px}.ferry{position:absolute;z-index:3;bottom:65px;left:20%;font-size:45px}.water{position:absolute;bottom:0;height:30%;width:100%;background:repeating-linear-gradient(0deg,#66888c,#66888c 2px,#83a0a0 3px,#83a0a0 8px)}.art-caption{position:absolute;bottom:16px;right:20px;color:#fff;font-size:9px;letter-spacing:2px;z-index:4}.hotel-card{display:flex;align-items:center;gap:20px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 25px;margin:22px 0 52px;box-shadow:0 8px 24px #57412b08}.hotel-icon{width:48px;height:48px;display:grid;place-items:center;background:var(--sage);border-radius:14px;color:#66735e;font-size:25px}.hotel-info{flex:1;min-width:0}.hotel-info .eyebrow{margin-bottom:5px}.hotel-info h2{font:600 20px "Playfair Display",serif;margin:0 0 5px}.muted{color:var(--muted);font-size:13px;margin:0;overflow-wrap:anywhere}.hotel-actions{display:flex;align-items:center;gap:16px}.btn{border:0;border-radius:9px;padding:11px 16px;font:600 12px "DM Sans",sans-serif;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.btn-light{background:#f3eee8;color:var(--brown)}.btn-primary{background:var(--brown);color:#fff}.text-link{font-size:12px;color:var(--brown);font-weight:700;text-decoration:none;white-space:nowrap}.hidden{display:none!important}.section-heading,.map-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}.section-heading h2,.map-heading h2{font:600 30px "Playfair Display",serif;margin:0}.section-note{font-size:12px;color:var(--muted);max-width:300px;line-height:1.6;margin:0 0 3px}.day-tabs{display:flex;gap:9px;overflow-x:auto;padding:3px 0 14px}.day-tab{flex:1;min-width:125px;text-align:left;padding:15px 16px;border:1px solid var(--line);background:#fff;border-radius:12px;cursor:pointer;color:var(--ink)}.day-tab.active{background:var(--brown);border-color:var(--brown);color:#fff}.day-tab strong{display:block;font-size:13px}.day-tab span{display:block;font-size:10px;margin-top:5px;opacity:.7;letter-spacing:1px}.day-panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px;margin-bottom:55px;min-height:240px}.day-panel-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:22px}.day-panel-head h3{font:600 22px "Playfair Display",serif;margin:0}.day-panel-head p{font-size:11px;color:var(--muted);margin:5px 0 0}.add-btn{background:#f1ece5;color:var(--brown);border:0;border-radius:9px;padding:11px 15px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}.place-list{display:grid;gap:10px}.place-item{display:grid;grid-template-columns:38px 1fr auto;gap:13px;align-items:start;padding:15px;border:1px solid #eee8e1;border-radius:12px}.place-icon{width:36px;height:36px;display:grid;place-items:center;background:var(--cream);border-radius:10px;font-size:17px}.place-main h4{font-size:14px;margin:1px 0 5px}.place-meta{font-size:11px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}.place-notes{font-size:12px;color:#746b62;margin:9px 0 0;line-height:1.5}.place-actions{display:flex;gap:7px;align-items:center}.small-action{border:0;background:transparent;color:#8b7b6b;font-size:11px;cursor:pointer;padding:5px}.map-section{margin-bottom:50px}.locations-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.location-card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:14px;display:flex;justify-content:space-between;gap:12px;align-items:center}.location-card strong{font-size:12px;display:block}.location-card span{font-size:10px;color:var(--muted);display:block;margin-top:5px}.location-card a{font-size:11px;color:var(--brown);text-decoration:none;font-weight:700;white-space:nowrap}.empty-state{padding:28px;text-align:center;background:#faf8f5;border:1px dashed #ded4c8;border-radius:12px;color:#9a8d80;font-size:12px;grid-column:1/-1}footer{text-align:center;color:#a99c8f;font-size:11px;padding:25px;border-top:1px solid var(--line)}footer span:first-child{color:#b59b7c;margin-right:6px}.modal{border:0;border-radius:17px;padding:0;width:min(510px,calc(100% - 28px));box-shadow:0 25px 80px #2b1e1450}.modal::backdrop{background:#241b14a6;backdrop-filter:blur(3px)}.modal form{padding:27px}.modal-top{display:flex;justify-content:space-between;align-items:start;margin-bottom:22px}.modal-top h2{font:600 24px "Playfair Display",serif;margin:0}.close-btn{border:0;background:#f3eee8;border-radius:50%;width:30px;height:30px;font-size:20px;color:var(--brown);cursor:pointer}.modal label{display:block;margin:14px 0}.modal label>span{display:block;font-size:11px;font-weight:700;color:#76695d;margin-bottom:7px}.modal input,.modal select,.modal textarea{width:100%;border:1px solid #e7dfd6;border-radius:8px;padding:11px 12px;font:12px "DM Sans",sans-serif;color:var(--ink);background:#fff;outline:none}.modal input:focus,.modal select:focus,.modal textarea:focus{border-color:#a88c70}.modal textarea{resize:vertical}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-hint{font-size:10px;color:var(--muted)}.modal-actions{display:flex;justify-content:end;gap:9px;margin-top:22px}[dir=rtl] body{font-family:"Cairo",sans-serif}[dir=rtl] .hero h1,[dir=rtl] .section-heading h2,[dir=rtl] .map-heading h2,[dir=rtl] .hotel-info h2,[dir=rtl] .day-panel-head h3,[dir=rtl] .modal-top h2{font-family:"Cairo",sans-serif}[dir=rtl] .eyebrow{letter-spacing:0}[dir=rtl] .day-tab{text-align:right}[dir=rtl] .hero-copy{text-align:right}[dir=rtl] .art-caption{left:20px;right:auto}[dir=rtl] .brand{letter-spacing:0}[dir=rtl] .brand small{letter-spacing:1px}[dir=rtl] .place-item{direction:rtl;text-align:right}[dir=rtl] .location-card{direction:rtl;text-align:right}[dir=rtl] .modal form{text-align:right}[dir=rtl] .modal-actions{justify-content:start}@media(max-width:720px){.page{padding:20px 15px}.hero{grid-template-columns:1fr}.hero-copy{padding:35px 27px}.hero-art{min-height:190px}.hotel-card{align-items:flex-start;flex-wrap:wrap;padding:18px}.hotel-info{width:calc(100% - 70px)}.hotel-actions{width:100%;padding-left:67px;flex-wrap:wrap}.section-heading,.map-heading{display:block}.section-note{margin-top:9px}.day-panel{padding:17px}.day-panel-head{align-items:flex-start}.day-panel-head h3{font-size:19px}.add-btn{font-size:10px;padding:10px}.place-item{grid-template-columns:34px 1fr}.place-actions{grid-column:2}.locations-list{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.hero h1{font-size:48px}}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✦</span><span>ISTANBUL <small>TRIP PLANNER</small></span></a>
+    <button id="languageBtn" class="lang-btn" type="button">العربية</button>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-en="YOUR LITTLE CITY GUIDE" data-ar="دليلكم الصغير للمدينة">YOUR LITTLE CITY GUIDE</p>
+        <h1 data-en="Five days in<br>Istanbul." data-ar="خمسة أيام في<br>إسطنبول.">Five days in<br>Istanbul.</h1>
+        <p class="hero-sub" data-en="A place for every plan, every meal, and every little memory." data-ar="مكان لكل جولة ووجبة وذكرى حلوة.">A place for every plan, every meal, and every little memory.</p>
+        <div class="date-pill"><span>22 — 26 NOV</span><span class="dot"></span><span data-en="5 DAYS · 2026" data-ar="٥ أيام · ٢٠٢٦">5 DAYS · 2026</span></div>
+      </div>
+      <div class="hero-art" aria-label="Istanbul illustration">
+        <div class="sun"></div><div class="skyline">☾</div>
+        <div class="mosque">🕌</div><div class="ferry">⛴</div>
+        <div class="water"></div>
+        <span class="art-caption">BOSPHORUS · TÜRKİYE</span>
+      </div>
+    </section>
+
+    <section class="hotel-card">
+      <div class="hotel-icon">⌂</div>
+      <div class="hotel-info">
+        <p class="eyebrow" data-en="YOUR HOME IN ISTANBUL" data-ar="إقامتكم في إسطنبول">YOUR HOME IN ISTANBUL</p>
+        <h2 id="hotelNameDisplay" data-en="Add your hotel" data-ar="أضيفوا اسم الفندق">Add your hotel</h2>
+        <p id="hotelAddressDisplay" class="muted" data-en="Save the hotel name and address to keep it handy." data-ar="أضيفوا اسم الفندق وعنوانه ليكون متاحًا لكم دائمًا.">Save the hotel name and address to keep it handy.</p>
+      </div>
+      <div class="hotel-actions">
+        <button id="editHotelBtn" class="btn btn-light" data-en="Add / Edit hotel" data-ar="إضافة / تعديل الفندق">Add / Edit hotel</button>
+        <a id="hotelMapLink" class="text-link hidden" target="_blank" rel="noopener"> <span data-en="Open map ↗" data-ar="فتح الخريطة ↗">Open map ↗</span></a>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div><p class="eyebrow" data-en="THE ITINERARY" data-ar="جدول الرحلة">THE ITINERARY</p><h2 data-en="Your days, your way." data-ar="أيامكم على مزاجكم.">Your days, your way.</h2></div>
+      <p class="section-note" data-en="Add places to visit, restaurants, cafés, and notes." data-ar="أضيفوا الأماكن والمطاعم والمقاهي والملاحظات.">Add places to visit, restaurants, cafés, and notes.</p>
+    </section>
+
+    <nav id="dayTabs" class="day-tabs" aria-label="Trip days"></nav>
+    <section id="dayPanel" class="day-panel"></section>
+
+    <section class="map-section">
+      <div class="map-heading">
+        <div><p class="eyebrow" data-en="ALL YOUR SAVED SPOTS" data-ar="كل المواقع المحفوظة">ALL YOUR SAVED SPOTS</p><h2 data-en="Your map list." data-ar="خريطة الأماكن.">Your map list.</h2></div>
+        <p class="section-note" data-en="Every saved address appears here with a Google Maps link." data-ar="كل عنوان تحفظونه سيظهر هنا مع رابط خرائط Google.">Every saved address appears here with a Google Maps link.</p>
+      </div>
+      <div id="allLocations" class="locations-list"><div class="empty-state">Your saved places will appear here.</div></div>
+    </section>
+
+    <footer><span>✦</span> <span data-en="Made for your Istanbul memories." data-ar="صُمم لذكرياتكم في إسطنبول.">Made for your Istanbul memories.</span></footer>
+  </main>
+
+  <dialog id="hotelDialog" class="modal">
+    <form id="hotelForm" method="dialog">
+      <div class="modal-top"><div><p class="eyebrow" data-en="ACCOMMODATION" data-ar="السكن">ACCOMMODATION</p><h2 data-en="Your hotel details" data-ar="بيانات الفندق">Your hotel details</h2></div><button class="close-btn" type="button" data-close="hotelDialog">×</button></div>
+      <label><span data-en="Hotel name" data-ar="اسم الفندق">Hotel name</span><input id="hotelName" placeholder="e.g. The Marmara Taksim"></label>
+      <label><span data-en="Hotel address / location" data-ar="عنوان الفندق / الموقع">Hotel address / location</span><input id="hotelAddress" placeholder="Paste the address or Google Maps link"></label>
+      <p class="form-hint" data-en="Tip: paste a Google Maps link or type the hotel address." data-ar="نصيحة: يمكنكم لصق رابط خرائط Google أو كتابة عنوان الفندق.">Tip: paste a Google Maps link or type the hotel address.</p>
+      <div class="modal-actions"><button class="btn btn-light" type="button" data-close="hotelDialog" data-en="Cancel" data-ar="إلغاء">Cancel</button><button class="btn btn-primary" type="submit" data-en="Save hotel" data-ar="حفظ الفندق">Save hotel</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="placeDialog" class="modal">
+    <form id="placeForm" method="dialog">
+      <div class="modal-top"><div><p class="eyebrow" data-en="MAKE A PLAN" data-ar="أضيفوا إلى الخطة">MAKE A PLAN</p><h2 id="placeDialogTitle" data-en="Add a place" data-ar="إضافة مكان">Add a place</h2></div><button class="close-btn" type="button" data-close="placeDialog">×</button></div>
+      <input type="hidden" id="placeId">
+      <label><span data-en="What kind of plan?" data-ar="نوع المكان">What kind of plan?</span><select id="placeType"><option value="visit">Place to visit</option><option value="food">Restaurant / food</option><option value="cafe">Café</option><option value="other">Other</option></select></label>
+      <label><span data-en="Place name" data-ar="اسم المكان">Place name</span><input id="placeName" required placeholder="e.g. Hagia Sophia"></label>
+      <div class="form-grid">
+        <label><span data-en="Time (optional)" data-ar="الوقت (اختياري)">Time (optional)</span><input id="placeTime" type="time"></label>
+        <label><span data-en="Area (optional)" data-ar="المنطقة (اختياري)">Area (optional)</span><input id="placeArea" placeholder="e.g. Sultanahmet"></label>
+      </div>
+      <label><span data-en="Address or Google Maps link" data-ar="العنوان أو رابط خرائط Google">Address or Google Maps link</span><input id="placeAddress" placeholder="Paste a location link or address"></label>
+      <label><span data-en="Notes (optional)" data-ar="ملاحظات (اختياري)">Notes (optional)</span><textarea id="placeNotes" rows="3" placeholder="Anything you want to remember..."></textarea></label>
+      <div class="modal-actions"><button class="btn btn-light" type="button" data-close="placeDialog" data-en="Cancel" data-ar="إلغاء">Cancel</button><button class="btn btn-primary" type="submit" data-en="Save to day" data-ar="حفظ في اليوم">Save to day</button></div>
+    </form>
+  </dialog>
+  <script>
+const days = [
+  {date:"22", weekday:"SUNDAY", en:"Day 1 · Sunday, 22 November", ar:"اليوم الأول · الأحد، ٢٢ نوفمبر"},
+  {date:"23", weekday:"MONDAY", en:"Day 2 · Monday, 23 November", ar:"اليوم الثاني · الاثنين، ٢٣ نوفمبر"},
+  {date:"24", weekday:"TUESDAY", en:"Day 3 · Tuesday, 24 November", ar:"اليوم الثالث · الثلاثاء، ٢٤ نوفمبر"},
+  {date:"25", weekday:"WEDNESDAY", en:"Day 4 · Wednesday, 25 November", ar:"اليوم الرابع · الأربعاء، ٢٥ نوفمبر"},
+  {date:"26", weekday:"THURSDAY", en:"Day 5 · Thursday, 26 November", ar:"اليوم الخامس · الخميس، ٢٦ نوفمبر"}
+];
+const icons = {visit:"📍",food:"🍽️",cafe:"☕",other:"✦"};
+let data = JSON.parse(localStorage.getItem("istanbulPlanner") || '{"hotel":{"name":"","address":""},"places":[]}');
+let activeDay = 0, language = localStorage.getItem("istanbulLanguage") || "en";
+const $ = id => document.getElementById(id);
+const t = (en,ar) => language==="ar" ? ar : en;
+function save(){localStorage.setItem("istanbulPlanner",JSON.stringify(data));}
+function mapUrl(value){if(!value)return ""; if(/^https?:\/\//i.test(value))return value;return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(value);}
+function renderLanguage(){
+  document.documentElement.lang=language;document.documentElement.dir=language==="ar"?"rtl":"ltr";
+  $("languageBtn").textContent=language==="ar"?"English":"العربية";
+  document.querySelectorAll("[data-en]").forEach(el=>{el.innerHTML=el.dataset[language];});
+  renderHotel();renderTabs();renderDay();renderLocations();
+}
+function renderHotel(){
+  $("hotelNameDisplay").textContent=data.hotel.name || t("Add your hotel","أضيفوا اسم الفندق");
+  $("hotelAddressDisplay").textContent=data.hotel.address || t("Save the hotel name and address to keep it handy.","أضيفوا اسم الفندق وعنوانه ليكون متاحًا لكم دائمًا.");
+  const link=$("hotelMapLink");link.href=mapUrl(data.hotel.address);link.classList.toggle("hidden",!data.hotel.address);
+}
+function renderTabs(){
+  $("dayTabs").innerHTML=days.map((d,i)=>`<button class="day-tab ${i===activeDay?"active":""}" data-day="${i}"><strong>${t("DAY","اليوم")} 0${i+1}</strong><span>${d.date} NOV · ${t(d.weekday,["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس"][i])}</span></button>`).join("");
+  document.querySelectorAll("[data-day]").forEach(b=>b.addEventListener("click",()=>{activeDay=Number(b.dataset.day);renderTabs();renderDay();}));
+}
+function renderDay(){
+  const list=data.places.filter(p=>p.day===activeDay).sort((a,b)=>(a.time||"").localeCompare(b.time||""));
+  $("dayPanel").innerHTML=`<div class="day-panel-head"><div><h3>${t(days[activeDay].en,days[activeDay].ar)}</h3><p>${t("Plan your stops and meals for this day.","رتبوا جولاتكم ووجباتكم لهذا اليوم.")}</p></div><button class="add-btn" id="addPlaceBtn">＋ ${t("Add a plan","إضافة إلى اليوم")}</button></div><div class="place-list">${list.length?list.map(p=>`<article class="place-item"><div class="place-icon">${icons[p.type]||"✦"}</div><div class="place-main"><h4>${escapeHtml(p.name)}</h4><div class="place-meta">${p.time?`<span>◷ ${p.time}</span>`:""}<span>${t(({visit:"Place to visit",food:"Restaurant / food",cafe:"Café",other:"Other"})[p.type],({visit:"مكان للزيارة",food:"مطعم / وجبة",cafe:"مقهى",other:"أخرى"})[p.type])}</span>${p.area?`<span>⌖ ${escapeHtml(p.area)}</span>`:""}</div>${p.notes?`<p class="place-notes">${escapeHtml(p.notes)}</p>`:""}${p.address?`<a class="text-link" href="${mapUrl(p.address)}" target="_blank" rel="noopener">${t("Open location ↗","فتح الموقع ↗")}</a>`:""}</div><div class="place-actions"><button class="small-action" data-edit="${p.id}">${t("Edit","تعديل")}</button><button class="small-action" data-delete="${p.id}">${t("Delete","حذف")}</button></div></article>`).join(""):`<div class="empty-state">${t("Nothing planned yet. Add your first stop for this day.","لا توجد خطط لهذا اليوم بعد. أضيفوا أول مكان لزيارته.")}</div>`}</div>`;
+  $("addPlaceBtn").addEventListener("click",()=>openPlace());
+  document.querySelectorAll("[data-edit]").forEach(b=>b.addEventListener("click",()=>openPlace(b.dataset.edit)));
+  document.querySelectorAll("[data-delete]").forEach(b=>b.addEventListener("click",()=>{data.places=data.places.filter(p=>p.id!==b.dataset.delete);save();renderDay();renderLocations();}));
+}
+function renderLocations(){
+  const all=[];
+  if(data.hotel.address)all.push({name:data.hotel.name||t("Hotel","الفندق"),address:data.hotel.address,detail:t("Your hotel","فندقكم")});
+  data.places.forEach(p=>{if(p.address)all.push({name:p.name,address:p.address,detail:`${t("Day","اليوم")} ${p.day+1} · ${p.area||t("Istanbul","إسطنبول")}`});});
+  $("allLocations").innerHTML=all.length?all.map(p=>`<div class="location-card"><div><strong>${escapeHtml(p.name)}</strong><span>${escapeHtml(p.detail)} · ${escapeHtml(p.address)}</span></div><a href="${mapUrl(p.address)}" target="_blank" rel="noopener">${t("View map ↗","عرض الخريطة ↗")}</a></div>`).join(""):`<div class="empty-state">${t("Your saved places will appear here. Add an address to any plan to include it.","ستظهر الأماكن المحفوظة هنا. أضيفوا عنوانًا لأي مكان ليظهر في القائمة.")}</div>`;
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function openPlace(id){
+  $("placeForm").reset();$("placeId").value="";$("placeDialogTitle").textContent=t("Add a place","إضافة مكان");
+  const p=data.places.find(x=>x.id===id);
+  if(p){$("placeId").value=p.id;$("placeType").value=p.type;$("placeName").value=p.name;$("placeTime").value=p.time||"";$("placeArea").value=p.area||"";$("placeAddress").value=p.address||"";$("placeNotes").value=p.notes||"";$("placeDialogTitle").textContent=t("Edit your plan","تعديل الخطة");}
+  $("placeDialog").showModal();
+}
+$("editHotelBtn").addEventListener("click",()=>{$("hotelName").value=data.hotel.name;$("hotelAddress").value=data.hotel.address;$("hotelDialog").showModal();});
+$("hotelForm").addEventListener("submit",e=>{e.preventDefault();data.hotel={name:$("hotelName").value.trim(),address:$("hotelAddress").value.trim()};save();$("hotelDialog").close();renderHotel();renderLocations();});
+$("placeForm").addEventListener("submit",e=>{e.preventDefault();const id=$("placeId").value;const p={id:id||String(Date.now()),day:activeDay,type:$("placeType").value,name:$("placeName").value.trim(),time:$("placeTime").value,area:$("placeArea").value.trim(),address:$("placeAddress").value.trim(),notes:$("placeNotes").value.trim()};if(id){const i=data.places.findIndex(x=>x.id===id);data.places[i]=p;}else data.places.push(p);save();$("placeDialog").close();renderDay();renderLocations();});
+document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>$(b.dataset.close).close()));
+$("languageBtn").addEventListener("click",()=>{language=language==="en"?"ar":"en";localStorage.setItem("istanbulLanguage",language);renderLanguage();});
+renderLanguage();
+  </script>
+</body>
+</html>
